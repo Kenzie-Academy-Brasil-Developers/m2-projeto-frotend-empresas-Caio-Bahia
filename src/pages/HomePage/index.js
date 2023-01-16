@@ -5,6 +5,7 @@ import { getAllCompanies } from "../../scripts/request.js"
 const companies = await getAllCompanies()
 
 toToggle()
+
 ToLogin()
 getAllCompanies()
 renderJobsHP(companies)

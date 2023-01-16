@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/pages/loginpage/index.css">
     <!-- Scripts -->
-    <script type="module" src=" ./index.js" defer>
-    </script>
 
 
     <title>Kenzie Login</title>
@@ -33,5 +31,22 @@
         <button class="home-btn"> Home </button>
         <button class="singup-btn">Cadastro</button>
     </div>
+    <main>
+        <form class="form-user_login">
+            <h2 class="form-tittle">Login</h2>
+            <p class="form-label">Preencha os campos para realizar o login</p>
+            <input type="email" class="input-email" placeholder="Digite seu e-mail Aqui...">
+            <input type="password" class="input-password" placeholder="Digite sua senha Aqui...">
+            <div class="form-buttons_container">
+                <button class="form-login_btn">Login</button>
+                <p class="or">ou</p>
+                <button class="form-singup_btn">Cadastre-se</button>
+            </div>
+        </form>
+    </main>
 
 </body>
+
+<script type="module" src="/src/pages/loginpage/index.js"></script>
+
+</html>
