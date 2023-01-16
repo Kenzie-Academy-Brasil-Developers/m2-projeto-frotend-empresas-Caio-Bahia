@@ -2,6 +2,8 @@
 // import { getLocalStorage } from "./localstorage"
 // import { toast } from "./toast"
 
+import { redirectUser } from "../pages/loginpage/redirect.js"
+
 const user = getUser() || {}
 const { token } = user
 const baseURL = " http://localhost:6278"
@@ -46,17 +48,15 @@ export async function login(data) {
     headers: requestHeaders,
     body: JSON.stringify(data)
   })
-  console.log(data)
+    .then(res => res.json())
+    .then(res => res)
+    .then(res => {
+      let token = JSON.stringify(res.token)
+      localStorage.setItem("token", token)
+      redirectUser()
+    })
   const PostLoginJSON = await PostLogin.json()
 
-  if (!PostLogin.ok) {
-    console.log("uepá")
-    // toast(PostLoginJSON.error, red)
-    // colocar aviso email ja existe no
-  } else {
-    // toast("Login Realizado com sucesso!", green)
-    validateUser(data)
-  }
   return PostLoginJSON
 }
 

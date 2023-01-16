@@ -51,12 +51,3 @@ export const ToAdm = () => {
     window.location.replace("/src/pages/loginpage/index.html")
   })
 }
-
-export const logout = () => {
-  const BTN = document.querySelector(".adm-btn")
-
-  BTN.addEventListener("click", () => {
-    localStorage.clear()
-    window.location.replace("/src/pages/loginpage/index.html")
-  })
-}
