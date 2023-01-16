@@ -10,7 +10,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/global.css">
-    <link rel="stylesheet" href="/src/pages/loginpage/index.css">
+    <link rel="stylesheet" href="/src/pages/singupPage/index.css">
     <!-- Scripts -->
 
 
@@ -29,10 +29,32 @@
     </header>
     <div class="header-button_container">
         <button class="home-btn"> Home </button>
-        <button class="singup-btn">Cadastro</button>
+        <button class="singup-btn">Login</button>
     </div>
+    <main>
+        <form action="" class="form-user_signup">
 
+            <h2 class="form-title">Cadastre-se</h2>
+            <p class="form-label">Preencha os campos para realizar login</p>
+            <input type="text" placeholder="Seu nome" class="input-name">
+            <input type="email" placeholder="Seu e-mail" class="input-email">
+            <input type="password" placeholder="Sua senha" class="input-password">
+            <select name="" id="" class="form-signup_select">
+                <option value="">Nível profissional</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Sênior</option>
+            </select>
+            <div class="buttons-container_signup">
+                <button class="signup-button">Cadastre-se</button>
+                <button class="return-button">Retornar</button>
+            </div>
+        </form>
+    </main>
 
 </body>
+
+<script type="module" src="/src/pages/singupPage/index.js"></script>
 
 </html>

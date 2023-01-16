@@ -87,3 +87,119 @@ header {
 .toggle-menu {
   visibility: visible;
 }
+
+/* main */
+html {
+  height: 90vh;
+}
+body {
+  height: 100%;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.form-user_signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  /* height: 80%; */
+  padding: 19px;
+
+  background: rgba(255, 255, 255, 0.95);
+}
+.form-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+}
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.input-name {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 100%;
+  height: 52px;
+}
+.input-email {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 100%;
+  height: 52px;
+}
+.input-password {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 100%;
+  height: 52px;
+}
+.form-signup_select {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  width: 100%;
+  height: 52px;
+}
+.buttons-container_signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+.signup-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 10px;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  background-color: #4200ff;
+  border: 2px solid #4200ff;
+}
+.return-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 10px;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4200ff;
+  background-color: transparent;
+  border: 1px solid #4200ff;
+}

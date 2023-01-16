@@ -6,8 +6,8 @@ const user = getUser() || {}
 const { token } = user
 const baseURL = " http://localhost:6278"
 const requestHeaders = {
-  "Content-Type": "aplication/json",
-  Authorizatiom: `Bearer ${token}`
+  "Content-Type": "application/json",
+  Authorization: `Bearer ${token}`
 }
 const red = "#C20803"
 const green = "#08C203"
@@ -22,18 +22,24 @@ export function getUser() {
 export async function createUser(data) {
   const newUser = await fetch(`${baseURL}/auth/register`, {
     method: "POST",
-    headers: requestHeaders,
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(data)
   })
 
   const newUserJSON = await newUser.json()
   if (!newUser.ok) {
-    toast(newUserJSON.error, red)
+    console.log("yahoo!")
+    // toast(newUserJSON.error, red)
   } else {
-    toast("Criação de usuario Concluida", green)
-    window.location.replace("/src/pages/login.html")
+    // toast("Criação de usuario Concluida", green)
+    window.location.replace("/src/pages/UserPage/index.html")
   }
+  console.log(newUserJSON)
+  return newUserJSON
 }
+
 export async function login(data) {
   const PostLogin = await fetch(`${baseURL}/auth/login`, {
     method: "POST",

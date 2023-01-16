@@ -9,37 +9,32 @@ export const toToggle = () => {
   })
 }
 export const ToHome = () => {
-  const HomeBTN = document.querySelector(".home-btn")
-
-  HomeBTN.addEventListener("click", () => {
-    window.location.replace("/src/pages/HomePage/index.html")
+  const HomeBTN = document.querySelectorAll(".home-btn")
+  HomeBTN.forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.location.replace("/src/pages/HomePage/index.html")
+    })
   })
 }
 
 export const ToLogin = () => {
-  const BTN = document.querySelector(".login-btn")
-
-  BTN.addEventListener("click", () => {
-    console.log("MIAU")
-    window.location.replace("/src/pages/loginpage/index.html")
+  const lognBTN = document.querySelectorAll(".login-btn")
+  lognBTN.forEach(btn => {
+    btn.addEventListener("click", () => {
+      console.log("MIAU")
+      window.location.replace("/src/pages/loginpage/index.html")
+    })
   })
 }
 
 export const ToSingup = () => {
-  const signBtn = document.querySelector(".singup-btn")
-  signBtn.addEventListener("click", () => {
-    console.log("miau")
-    window.location.replace("/src/pages/singupPage/index.html")
+  const signBtn = document.querySelectorAll(".singup-btn")
+  signBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.location.replace("/src/pages/singupPage/index.html")
+    })
   })
 }
-
-// export const toSingup = () => {
-//   const signButton = document.querySelector("#singup-btn")
-
-//   signButton.addEventListener("click", () => {
-//     console.log("MIAAAAAAAAAAAAU!")
-//   })
-// }
 
 export const ToUser = () => {
   const BTN = document.querySelector(".user-btn")

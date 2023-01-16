@@ -76,7 +76,7 @@ header {
   justify-content: center;
 }
 
-.singup-btn {
+#cadastro {
   background: #4200ff;
   color: white;
 }
@@ -170,7 +170,7 @@ main {
   background-color: #4200ff;
   border: 2px solid #4200ff;
 }
-.form-singup_btn {
+.singup-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
