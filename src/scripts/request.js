@@ -46,7 +46,7 @@ export async function login(data) {
     headers: requestHeaders,
     body: JSON.stringify(data)
   })
-
+  console.log(data)
   const PostLoginJSON = await PostLogin.json()
 
   if (!PostLogin.ok) {
