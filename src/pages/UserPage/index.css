@@ -1,0 +1,89 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 2px solid #00000033;
+}
+.container-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.point-logo {
+  border-radius: 50%;
+  background-color: #4200ff80;
+  width: 16px;
+  height: 16px;
+}
+.logo {
+  font-size: 1.2srem;
+  font-weight: bold;
+}
+
+/* menu toggle */
+
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: url(/src/img/togglebtn.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url(/src/img/togglebtnX.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* modal toggle */
+
+.header-button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  visibility: hidden;
+  overflow-y: auto;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 12%);
+  z-index: 99999;
+  position: absolute;
+  top: 52px;
+  transition: 0.5s;
+}
+.header-button_container > button {
+  width: 149.22px;
+  height: 48px;
+  left: 187.78px;
+  top: 84px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singup-btn {
+  background: #4200ff;
+  color: white;
+}
+.login-btn {
+  color: #4200ff;
+  border: 1px solid #4200ff;
+}
+.toggle-menu {
+  visibility: visible;
+}
