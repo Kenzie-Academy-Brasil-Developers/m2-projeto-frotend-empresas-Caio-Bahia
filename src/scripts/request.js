@@ -65,10 +65,10 @@ export async function validateUser(data) {
 
   if (!isAdm) {
     localStorage.setItem("user-type", "user")
-    window.location.replace("/src/pages/userPage.html")
+    window.location.replace("/src/pages/UserPage/index.html")
   } else {
     localStorage.setItem("user-type", "admin")
-    window.location.replace("/src/pages/adminPage.html")
+    window.location.replace("/src/pages/adminPage/index.html")
   }
 }
 
