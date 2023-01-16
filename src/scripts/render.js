@@ -2,7 +2,7 @@ import { getAllCompanies, getAllSectors } from "./request.js"
 
 // homepage-----------------------
 
-const companies = getAllCompanies()
+const companies = await getAllCompanies()
 const UlContainer = document.querySelector(".job-card-container")
 
 export function renderJobsHP(array, comparador) {
@@ -61,6 +61,9 @@ export function renderSelectedList() {
 
   select.appendChild(option)
   select.addEventListener("change", () => {
+    console.log(select.value)
+    console.log(companies)
+
     if (select.value == "SelectAll") {
       renderJobsHP(companies)
     }
