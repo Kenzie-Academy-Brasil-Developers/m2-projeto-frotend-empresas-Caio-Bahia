@@ -7,7 +7,7 @@ const UlContainer = document.querySelector(".job-card-container")
 
 export function renderJobsHP(array, comparador) {
   UlContainer.innerHTML = ""
-  console.log(array)
+  // console.log(array)
   array.forEach(element => {
     if (comparador) {
       if (element.sectors.description == comparador) {

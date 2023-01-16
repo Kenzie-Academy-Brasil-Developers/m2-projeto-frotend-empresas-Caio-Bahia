@@ -44,14 +44,14 @@ export async function login(data) {
   const PostLoginJSON = await PostLogin.json()
 
   if (!PostLogin.ok) {
-    toast(PostLoginJSON.error, red)
-
+    console.log("uepá")
+    // toast(PostLoginJSON.error, red)
     // colocar aviso email ja existe no
   } else {
-    toast("Login Realizado com sucesso!", green)
+    // toast("Login Realizado com sucesso!", green)
     validateUser(data)
   }
-  return PostLogin
+  return PostLoginJSON
 }
 
 export async function validateUser(data) {
