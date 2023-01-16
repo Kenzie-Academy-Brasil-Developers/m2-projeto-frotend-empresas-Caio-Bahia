@@ -1,10 +1,10 @@
-import { json } from "stream/consumers"
-import { getLocalStorage } from "./localstorage"
-import { toast } from "./toast"
+// import { json } from "stream/consumers"
+// import { getLocalStorage } from "./localstorage"
+// import { toast } from "./toast"
 
 const user = getUser() || {}
 const { token } = user
-const baseURL = " http://localhost:6278/"
+const baseURL = " http://localhost:6278"
 const requestHeaders = {
   "Content-Type": "aplication/json",
   Authorizatiom: `Bearer ${token}`
@@ -81,12 +81,9 @@ export async function getAllCompanies() {
   })
   const getCompanyJSON = await getCompany.json()
 
-  if (!getCompany.ok) {
-    toast(getCompanyJSON.error, red)
-  }
-
   return getCompanyJSON
 }
+
 export async function getAllSectors() {
   const getSelectors = await fetch(`${baseURL}/sectors`, {
     method: "GET",

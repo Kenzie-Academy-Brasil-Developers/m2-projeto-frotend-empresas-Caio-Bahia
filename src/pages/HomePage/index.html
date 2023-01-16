@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TOASTIFY -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> -->
     <!-- TOASTIFY -->
 
     <!-- Stylesheets -->
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="./index.css">
     <!-- Scripts -->
-    <script src="./index.js" type="module" defer></script>
 
     <title>Kenzie Empresas</title>
 </head>
@@ -39,17 +38,37 @@
     <main>
         <section class="left-section"></section>
         <section class="right-section">
-            <select name="jobs-select" id="jobs-select"></select>
-            <ul class="job-cards">
-                <li id="card">
-                    <h3>Empresa Name</h3>
+            <select name="jobs-select" id="jobs-select">
+                <option value="alimenticio">alimenticio</option>
+            </select>
+            <ul class="job-card-container">
+                <li class="card">
+                    <h3>Name</h3>
                     <p>10 horas</p>
-                    <button class="circle-button button-default button-style-100">Setor</button>
+                    <p class="card-sector">alimenticio</p>
+                </li>
+                <li class="card">
+                    <h3>Name</h3>
+                    <p>10 horas</p>
+                    <p class="card-sector">alimenticio</p>
+                </li>
+                <li class="card">
+                    <h3>Name</h3>
+                    <p>10 horas</p>
+                    <p class="card-sector">alimenticio</p>
+                </li>
+                <li class="card">
+                    <h3>Name</h3>
+                    <p>10 horas</p>
+                    <p class="card-sector">alimenticio</p>
                 </li>
             </ul>
         </section>
 
     </main>
 </body>
+
+<script type="module" src="/src/pages/HomePage/index.js"></script>
+
 
 </html>

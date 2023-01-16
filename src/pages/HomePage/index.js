@@ -1,5 +1,12 @@
-import { menuToggle } from "../../scripts/buttons.js"
-import { ToLogin } from "../../scripts/buttons.js"
+import { ToLogin, toToggle } from "../../scripts/buttons.js"
+import { renderJobsHP, renderSelectedList } from "../../scripts/render.js"
+import { getAllCompanies } from "../../scripts/request.js"
 
-menuToggle()
+const companies = await getAllCompanies()
+
+toToggle()
 ToLogin()
+getAllCompanies()
+renderJobsHP(companies)
+// console.log(companies)
+renderSelectedList()

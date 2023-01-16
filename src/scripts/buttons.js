@@ -1,4 +1,4 @@
-export function menuToggle() {
+export const toToggle = () => {
   const toggle = document.querySelector(".toggle")
   const container = document.querySelector(".header-button_container")
 
@@ -8,7 +8,6 @@ export function menuToggle() {
     // console.log("oi")
   })
 }
-
 export const ToHome = () => {
   const HomeBTN = document.querySelector(".home-btn")
 
